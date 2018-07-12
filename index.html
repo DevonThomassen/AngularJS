@@ -1,0 +1,57 @@
+<!--
+    Opdracht:       dthomassen
+    Auteur:         Devon Thomassen
+    Datum + tijd:   11-7-2018 05:46
+    Bestandsnaam:   
+    Editor:         PhpStorm
+-->
+
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="StyleSheet.css" type="text/css">
+	<meta name="description" content="Ik ben Devon Thomassen en dit is mijn website">
+	<meta name="keywords" content="Devon, Thomassen, website, portfolio">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>-->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>-->
+	<script src="script.js" defer></script>
+</head>
+<body>
+<div class="setUp" ng-controller="myCtrl">
+	<h1 class="title">{{title}}</h1>
+	<div class="menu_icon" title="Low quality = {{}}">
+		<span></span>
+		<span></span>
+	</div>
+	<div id="one" ng-hide="hideP1">
+		<h1>{{player1}}</h1>
+		<input class="player" type="text" ng-model="player1" ng-maxlength="15" required>
+		<label class="checkbox">
+			<input type="radio" name="name1" ng-model="symbolX">
+			<span>{{symbolX.name}}</span>
+			<!--<span class="error" ng-show="app.name1.$error.maxlength">Too long!</span>-->
+		</label>
+		<label class="checkbox">
+			<input type="radio" name="name1" ng-model="symbolO">
+			<span>{{symbolO.name}}</span>
+		</label>
+		<input type="checkbox" ng-model="hideP1"> Done
+
+	</div>
+	<div id="two" ng-hide="hideP2">
+		<h1>{{player2}}</h1>
+		<input class="player" type="text" ng-model="player2" ng-maxlength="15" required>
+		<br>
+		<input type="checkbox" ng-model="hideP2"> Done
+	</div>
+</div>
+<div class="play">
+	<!-- Game -->
+</div>
+</body>
+</html>
