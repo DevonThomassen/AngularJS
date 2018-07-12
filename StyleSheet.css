@@ -45,9 +45,9 @@ input[type="checkbox"] {
 /*}*/
 
 @keyframes rainbow {
-    0% {background-position: 0% 82%}
-    50% {background-position: 100% 19%}
-    100% {background-position: 0% 82%}
+    0%      { background-position: 0% 82%}
+    50%     { background-position: 100% 19%}
+    100%    { background-position: 0% 82%}
 }
 /* Menu icon */
 .menu_icon {
